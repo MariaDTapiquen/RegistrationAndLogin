@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/iconoRegister.png" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://kit.fontawesome.com/2f9019210c.js" crossorigin="anonymous"></script>
+    <title>Registro</title>
+</head>
+<body>
+    <audio
+      src="./Sax Instrumental Fly Me To The Moon.mp3"
+      autoplay
+      loop
+    ></audio>
+    <main>
+        <article>
+            <form autocomplete="off">
+                <i class="icono fa-solid fa-user-plus"></i><h1>Crea Tu Cuenta</h1>
+
+                <label for="nombres">Nombres</label>
+                <input type="text" name="nombres" id="nombres" required="" autofocus></br>
+
+                <label for="Apellidos">Apellidos</label>
+                <input type="text" name="apellidos" id="apellidos" required=""></br>
+
+                <label for="fecNacimiento">Fecha de Nacimiento</label>
+                <input type="date" name="fecNacimiento" id="fecNacimiento" required=""></br>
+
+                <label for="email">Correo Electrónico</label>
+                <input type="email" name="correo" id="correo" required=""></br>
+
+                <label for="usuario">Usuario</label>
+                <input type="text" name="usuario" id="usuario" required=""></br>
+
+                <label for="clave">Contraseña</label>
+                <input type="password" name="clave" id="clave" required=""></br>
+
+                <label for="clave2">Confirme Contraseña</label>
+                <input type="password" name="clave2" id="clave" required=""></br>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" id="telefono" required=""></br>
+
+                <p class="terminosCondiciones">
+                    <input type="checkbox" id="terminos" name="terminos" value="terminos">
+                    Acepto los <a href="">Términos y Condiciones</a></br>
+                </p>
+
+                <i class="fa-brands fa-facebook"></i><input class="btnConect" type="button" value="Conectar con Facebook"></br>
+                <i class="fa-brands fa-google"></i><input class="btnConect" type="button" value="Conectar con Google"></br>
+
+                <p class="g-recaptcha" data-sitekey="6LerJfEfAAAAAKr2VrUBM0TH_32Leu-vp8yhn_Uo"></p>                        
+                
+                </br>
+
+                <input class="btn" type="submit" value="Registrar">
+                <p class="registrado">¿Está registrado?   <a href="login.html">Ingresar</a></p>
+            </form>
+        </article>
+        <aside>
+            <img src="./img/luna.png" alt="Luna Llena" class="luna">
+        </aside>
+    </main>
+
+</body>
+</html>

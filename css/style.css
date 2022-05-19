@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+
+main {
+    display: grid;
+    grid-template-areas: "article aside";
+}
+
+article{
+    margin: 0 auto;
+    padding: 20px;
+    grid-area: article;
+}
+
+aside{
+    padding: 20px;
+    grid-area: aside;
+}
+
+.luna {
+    width: 150px;
+    animation: luna-move 200s linear forwards;
+}
+
+body{
+    width: auto;
+    background-image: url(../img/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    width: 450px;
+    margin: 25px 150px;
+    font-family: 'Zen Loop', cursive;
+    color: #ffffff;
+}
+
+form{
+    width: 400px;
+    color: #ffffff;
+    border-radius: 4px;
+    font-family: 'Zen Loop', cursive;
+    font-size: 20px;
+    box-shadow: 5px 10px 10px #924e7d;
+    background-color: rgb(5, 7, 12, 0.40);
+    position: relative;
+}
+
+.icono{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 5px;
+    left: 120px;
+    color: #924e7d;
+}
+
+label{
+    margin-top: 20px;
+    text-align: right;
+    width: 200px;
+    display: inline-block;
+}
+
+input{
+    padding: 7px;
+    border-radius: 10px;
+    border-color: #924e7d;
+}
+
+p{
+    height: 40px;
+    text-align: center;
+}
+
+.btnConect{
+    width: 95%;
+    font-family: 'Zen Loop', cursive;
+    font-size: 20px;
+}
+
+.btn{
+    margin: 25px 150px;
+    width: 25%;
+    font-family: 'Zen Loop', cursive;
+    font-size: 30px;
+}
+
+.btn:focus{
+    background: #924e7d;
+    color: #ffffff;
+    transition: background-color 0.50s ease-out;
+}
+
+.terminosCondiciones{
+    text-align: center;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.recuperarClave{
+    text-align: right;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.g-recaptcha{
+    margin-left: 45px;
+}
+
+.registrado{
+    text-align: right;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: #3c3c3c;
+    text-decoration: underline;
+    border-radius: 5px;
+}
+
+@keyframes luna-move {
+    to{
+        transform: translateX(430px);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+      grid-template-areas:
+        "article" "aside";
+    }
+}

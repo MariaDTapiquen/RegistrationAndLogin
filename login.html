@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/iconoLogin.png" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://kit.fontawesome.com/2f9019210c.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+<body>
+    <audio
+    src="./Sax Instrumental Fly Me To The Moon.mp3"
+    autoplay
+    loop
+  ></audio>
+    <main>
+        <article>
+            <form autocomplete="off">
+                <i class="icono fa-solid fa-right-to-bracket"></i><h1>Ingresa a tu Cuenta</h1>
+                <label for="username">Nombre de Usuario</label>
+                <input type="text" name="username" id="username" required="" autofocus></br>
+
+                <label for="clave">Contraseña</label>
+                <input type="password" name="clave" id="clave" required=""></br>
+
+                <p class="recuperarClave">
+                    <a href="">¿Desea recuperar su contraseña?</a></br>
+                </p>
+
+                <i class="fa-brands fa-facebook"></i><input class="btnConect" type="button" value="Ingresar con Facebook"></br>
+                <i class="fa-brands fa-google"></i><input class="btnConect" type="button" value="Ingresar con Google"></br>
+
+                <p class="g-recaptcha" data-sitekey="6LerJfEfAAAAAKr2VrUBM0TH_32Leu-vp8yhn_Uo"></p>                        
+                
+                </br>
+
+                <input class="btn" type="submit" value="Ingresar">
+                <p class="registrado">¿No tiene cuenta?<a href="registro.html"> Regístrese aquí</a></p>
+            </form>
+        </article>
+        <aside>
+            <img src="./img/luna.png" alt="Luna Llena" class="luna">
+        </aside>
+    </main>
+</body>
+</html>
